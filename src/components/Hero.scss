@@ -1,32 +1,30 @@
-@import "../styles/variables";
+@use "../styles/variables" as v;
 
 .hero {
   display: flex;
   align-items: center;
-
-  @media (max-width: $mobile) {
-    align-items: start;
-  }
-
   justify-content: center;
   min-height: 100vh;
   background: url("/src/assets/hero3.png") no-repeat center center/cover;
-  @media (max-width: $mobile) {
-    background-color: #181818;
+  position: relative; // Ensure relative positioning for proper stacking context
 
+  @media (max-width: v.$mobile) {
+    background-color: #181818;
     background-position: bottom -115px right 20%;
   }
-  position: relative; // Ensure relative positioning for proper stacking context
+  @media (max-width: v.$mobile) {
+    align-items: start;
+  }
 
   &__content {
     text-align: center;
-    color: $light-grey;
+    color: v.$light-grey;
     padding: 2rem;
-    @media (max-width: $mobile) {
+    @media (max-width: v.$mobile) {
       padding: 1rem;
     }
 
-    @media (min-width: $mobile) {
+    @media (min-width: v.$mobile) {
       position: relative;
       z-index: 10; // Ensure it sits above the blurred background
       background: rgba(50, 50, 50, 0.2); // Semi-transparent
@@ -37,15 +35,15 @@
     }
 
     &__title {
-      font-family: "Inria Serif", serif;
-      font-size: 3rem;
-      color: $orange;
+      font-family: "Playfair Display", serif;
+      font-size: 2.5rem;
+      color: v.$orange;
     }
 
     &__subtitle {
       font-family: "Nunito", sans-serif;
       font-size: 1.5rem;
-      color: $grey;
+      color: v.$grey;
       margin: 1rem 0;
     }
 
