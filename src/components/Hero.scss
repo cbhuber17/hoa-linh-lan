@@ -9,7 +9,7 @@
   position: relative; // Ensure relative positioning for proper stacking context
 
   @media (max-width: v.$mobile) {
-    background-color: #181818;
+    background-color: v.$black;
     background-position: bottom -115px right 20%;
   }
   @media (max-width: v.$mobile) {
