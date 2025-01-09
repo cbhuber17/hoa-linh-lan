@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import { flowerImages } from "../constants";
 import "./FlowerCarousel.scss";
+import Image from "./Image";
 
 const FlowerCarousel = () => {
   const settings = {
@@ -61,7 +62,7 @@ const FlowerCarousel = () => {
             ) {
               return (
                 <div key={index} className="slick-slide">
-                  <img src={flowerImg.fileName} alt={`Bó hoa ${index + 1}`} />
+                  <Image src={flowerImg.fileName} alt={`Bó hoa ${index + 1}`} />
                 </div>
               );
             } else return null;
