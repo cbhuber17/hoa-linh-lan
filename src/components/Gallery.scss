@@ -190,6 +190,12 @@
       height: 100%;
       width: 100%;
       object-fit: contain;
+
+      &:hover {
+        border: 1px solid v.$orange;
+        scale: 1.05;
+        transition: 0.3s;
+      }
     }
   }
 }
