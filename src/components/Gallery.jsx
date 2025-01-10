@@ -7,7 +7,7 @@ const Gallery = () => {
     <section className="display">
       <div className="header">
         <div className="hero_img">
-          <img src="/hoa-linh-lan/src/assets/Hero1.png" alt="Hero1" />
+          <img src="/hoa-linh-lan/Hero1.png" alt="Hero1" />
         </div>
         <div>
           <h1 className="title">Bộ Sưu Tập Tất Cả Các Bó Hoa</h1>
