@@ -1,3 +1,4 @@
+import Contact from "./components/Contact";
 import FlowerCarousel from "./components/FlowerCarousel";
 import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
@@ -8,6 +9,7 @@ const App = () => {
       <Hero />
       <FlowerCarousel />
       <Gallery />
+      <Contact />
     </>
   );
 };

@@ -1,0 +1,94 @@
+@use "../styles/variables" as v;
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #000;
+
+  &__form {
+    flex: 1;
+    @media (min-width: v.$mobile) {
+      max-width: 50%; // Ensure form takes half the width
+    }
+  }
+
+  &__heading {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: v.$orange;
+    margin-bottom: 1rem;
+  }
+
+  &__field {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding-top: 2rem;
+
+    &__label {
+      width: 12%;
+      display: block;
+      font-family: "Nunito", sans-serif;
+      font-size: 1rem;
+      color: #d9d9d9;
+      margin-bottom: 0;
+      margin-right: 0.5rem;
+      text-align: left;
+    }
+
+    &__input,
+    &__textarea {
+      width: 100%;
+      padding: 0.3rem;
+      border: none;
+      border-radius: 5px;
+      background-color: transparent;
+      color: #f0f0f0;
+      font-family: "Nunito", sans-serif;
+      font-size: 1rem;
+
+      &:focus {
+        border-color: v.$orange;
+        outline: none;
+      }
+    }
+
+    &__textarea {
+      border: 1px solid white;
+      resize: none;
+      height: 100px;
+    }
+  }
+
+  &__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 475px;
+
+    @media (min-width: v.$mobile) {
+      &__fallback-image {
+        height: 400px;
+      }
+    }
+    @media (min-width: v.$tablet) {
+      &__fallback-image {
+        height: 300px;
+      }
+    }
+    @media (min-width: v.$desktop) {
+      &__fallback-image {
+        height: 400px;
+      }
+    }
+
+    @media (max-width: v.$mobile) {
+      display: none;
+    }
+  }
+}

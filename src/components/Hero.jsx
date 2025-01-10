@@ -1,3 +1,4 @@
+import Button from "./Button";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
           Cách cắm hoa tuyệt đẹp cho mọi dịp.
         </p>
         <a href="#best-flowers">
-          <button className="hero__content__cta">Xem bó hoa</button>
+          <Button message="Xem bó hoa" />
         </a>
       </div>
     </section>

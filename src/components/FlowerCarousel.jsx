@@ -6,7 +6,6 @@ import Image from "./Image";
 const FlowerCarousel = () => {
   const settings = {
     className: "center",
-    centerMode: true,
     centerPadding: "60px",
     dots: true,
     infinite: true,
