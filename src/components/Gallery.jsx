@@ -23,35 +23,35 @@ const Gallery = () => {
 
       <div className="gallery">
         {/* First Row */}
-        <figure class="gallery__item gallery__item--1">
+        <figure className="gallery__item gallery__item--1">
           <Image
             src="/hoa-linh-lan/flowers/Hoa01.png"
             alt="Gallery image 1"
             applyClass="gallery__img"
           />
         </figure>
-        <figure class="gallery__item gallery__item--2">
+        <figure className="gallery__item gallery__item--2">
           <Image
             src="/hoa-linh-lan/flowers/Hoa02.png"
             alt="Gallery image 2"
             applyClass="gallery__img"
           />
         </figure>
-        <figure class="gallery__item gallery__item--3">
+        <figure className="gallery__item gallery__item--3">
           <Image
             src="/hoa-linh-lan/flowers/Hoa03.png"
             alt="Gallery image 3"
             applyClass="gallery__img"
           />
         </figure>
-        <figure class="gallery__item gallery__item--4">
+        <figure className="gallery__item gallery__item--4">
           <Image
             src="/hoa-linh-lan/flowers/Hoa20.png"
             alt="Gallery image 4"
             applyClass="gallery__img"
           />
         </figure>
-        <figure class="gallery__item gallery__item--5">
+        <figure className="gallery__item gallery__item--5">
           <Image
             src="/hoa-linh-lan/flowers/Hoa06.png"
             alt="Gallery image 6"
@@ -60,35 +60,35 @@ const Gallery = () => {
         </figure>
 
         {/* Second Row */}
-        <figure class="gallery__item gallery__item--6">
+        <figure className="gallery__item gallery__item--6">
           <Image
             src="/hoa-linh-lan/flowers/Hoa07.png"
             alt="Gallery image 6"
             applyClass="gallery__img"
           />
         </figure>
-        <figure class="gallery__item gallery__item--7">
+        <figure className="gallery__item gallery__item--7">
           <Image
             src="/hoa-linh-lan/flowers/Hoa10.png"
             alt="Gallery image 7"
             applyClass="gallery__img"
           />
         </figure>
-        <figure class="gallery__item gallery__item--8">
+        <figure className="gallery__item gallery__item--8">
           <Image
             src="/hoa-linh-lan/flowers/Hoa09.png"
             alt="Gallery image 8"
             applyClass="gallery__img"
           />
         </figure>
-        <figure class="gallery__item gallery__item--9">
+        <figure className="gallery__item gallery__item--9">
           <Image
             src="/hoa-linh-lan/flowers/Hoa08.png"
             alt="Gallery image 9"
             applyClass="gallery__img"
           />
         </figure>
-        <figure class="gallery__item gallery__item--10">
+        <figure className="gallery__item gallery__item--10">
           <Image
             src="/hoa-linh-lan/flowers/Hoa05.png"
             alt="Gallery image 10"
@@ -97,28 +97,28 @@ const Gallery = () => {
         </figure>
 
         {/* Third Row */}
-        <figure class="gallery__item gallery__item--11">
+        <figure className="gallery__item gallery__item--11">
           <Image
             src="/hoa-linh-lan/flowers/Hoa11.png"
             alt="Gallery image 11"
             applyClass="gallery__img"
           />
         </figure>
-        <figure class="gallery__item gallery__item--12">
+        <figure className="gallery__item gallery__item--12">
           <Image
             src="/hoa-linh-lan/flowers/Hoa13.png"
             alt="Gallery image 12"
             applyClass="gallery__img"
           />
         </figure>
-        <figure class="gallery__item gallery__item--13">
+        <figure className="gallery__item gallery__item--13">
           <Image
             src="/hoa-linh-lan/flowers/Hoa18.png"
             alt="Gallery image 13"
             applyClass="gallery__img"
           />
         </figure>
-        <figure class="gallery__item gallery__item--14">
+        <figure className="gallery__item gallery__item--14">
           <Image
             src="/hoa-linh-lan/flowers/Hoa12.png"
             alt="Gallery image 14"
@@ -128,7 +128,7 @@ const Gallery = () => {
 
         {/* Fourth Row */}
 
-        <figure class="gallery__item gallery__item--15">
+        <figure className="gallery__item gallery__item--15">
           <Image
             src="/hoa-linh-lan/flowers/Hoa19.png"
             alt="Gallery image 15"
@@ -136,7 +136,7 @@ const Gallery = () => {
           />
         </figure>
 
-        <figure class="gallery__item gallery__item--16">
+        <figure className="gallery__item gallery__item--16">
           <Image
             src="/hoa-linh-lan/flowers/Hoa04.png"
             alt="Gallery image 16"
@@ -144,7 +144,7 @@ const Gallery = () => {
           />
         </figure>
 
-        <figure class="gallery__item gallery__item--17">
+        <figure className="gallery__item gallery__item--17">
           <Image
             src="/hoa-linh-lan/flowers/Hoa16.png"
             alt="Gallery image 17"
@@ -152,7 +152,7 @@ const Gallery = () => {
           />
         </figure>
 
-        <figure class="gallery__item gallery__item--18">
+        <figure className="gallery__item gallery__item--18">
           <Image
             src="/hoa-linh-lan/flowers/Hoa17.png"
             alt="Gallery image 18"
@@ -160,7 +160,7 @@ const Gallery = () => {
           />
         </figure>
 
-        <figure class="gallery__item gallery__item--19">
+        <figure className="gallery__item gallery__item--19">
           <Image
             src="/hoa-linh-lan/flowers/Hoa15.png"
             alt="Gallery image 19"
@@ -168,7 +168,7 @@ const Gallery = () => {
           />
         </figure>
 
-        <figure class="gallery__item gallery__item--20">
+        <figure className="gallery__item gallery__item--20">
           <Image
             src="/hoa-linh-lan/flowers/Hoa14.png"
             alt="Gallery image 20"
