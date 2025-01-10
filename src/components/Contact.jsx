@@ -3,7 +3,7 @@ import "./Contact.scss";
 
 const Contact = () => {
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <div className="contact__form">
         <h2 className="contact__heading">Liên Hệ Với Tôi</h2>
         <form>

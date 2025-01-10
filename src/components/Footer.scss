@@ -1,0 +1,95 @@
+@use "../styles/variables" as v;
+
+.footer {
+  background-color: #0a0732;
+  color: #f0f0f0;
+  padding: 2rem 1rem;
+  font-family: "Nunito", sans-serif;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__brand {
+    flex: 1;
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.8rem;
+      color: v.$orange;
+    }
+    p {
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__links {
+    flex: 1;
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 0.5rem;
+        a {
+          text-decoration: none;
+          color: #f0f0f0;
+          &:hover {
+            color: v.$orange;
+          }
+        }
+      }
+    }
+    &--all-flowers {
+      @media (max-width: v.$mobile) {
+        display: none;
+      }
+    }
+  }
+
+  &__contact {
+    flex: 1;
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin: 0.5rem 0;
+    }
+    &__socials {
+      display: flex;
+      gap: 1rem;
+
+      &__icon {
+        color: #f0f0f0;
+        text-decoration: none;
+
+        &:hover {
+          color: #caaa86; // Accent color on hover
+        }
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #736e6e;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #d9d9d9;
+  }
+}

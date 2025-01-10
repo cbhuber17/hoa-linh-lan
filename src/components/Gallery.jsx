@@ -4,7 +4,7 @@ import Image from "./Image";
 
 const Gallery = () => {
   return (
-    <section className="display">
+    <section className="display" id="gallery">
       <div className="header">
         <div className="hero_img">
           <img src="/hoa-linh-lan/Hero1.png" alt="Hero1" />

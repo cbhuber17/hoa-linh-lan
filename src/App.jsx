@@ -2,6 +2,7 @@ import Contact from "./components/Contact";
 import FlowerCarousel from "./components/FlowerCarousel";
 import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <FlowerCarousel />
       <Gallery />
       <Contact />
+      <Footer />
     </>
   );
 };
