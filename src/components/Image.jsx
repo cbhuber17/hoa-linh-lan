@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import "./Image.scss";
 
-const Image = ({ src, alt }) => {
+const Image = ({ src, alt, applyClass }) => {
   const [isFullScreen, setIsFullScreen] = useState(false);
 
   const toggleFullScreen = () => {
@@ -40,6 +40,7 @@ const Image = ({ src, alt }) => {
         src={src}
         alt={alt}
         onClick={toggleFullScreen}
+        className={applyClass}
         style={{ cursor: "pointer" }}
       />
 
