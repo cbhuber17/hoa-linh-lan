@@ -1,0 +1,67 @@
+@use "../styles/variables" as v;
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 9999;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    background-color: #000;
+    color: #f0f0f0;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    padding: 2rem;
+
+    &__header {
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem;
+      color: v.$orange;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 1.5rem;
+
+        a {
+          text-decoration: none;
+          color: #f0f0f0;
+          font-size: 1.2rem;
+          font-family: "Nunito", sans-serif;
+
+          &:hover {
+            color: #caaa86;
+          }
+        }
+      }
+    }
+  }
+}

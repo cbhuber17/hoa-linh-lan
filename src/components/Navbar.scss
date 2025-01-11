@@ -1,0 +1,82 @@
+@use "../styles/variables" as v;
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+  color: #f0f0f0;
+  padding: 1rem 2rem;
+  font-family: "Nunito", sans-serif;
+
+  @media (max-width: v.$mobile) {
+    padding-left: 1rem;
+  }
+
+  &__logo {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    color: v.$orange;
+    margin-right: 2rem;
+
+    @media (max-width: v.$mobile) {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    li a {
+      text-decoration: none;
+      color: #f0f0f0;
+      transition: color 0.3s;
+
+      &:hover {
+        color: v.$orange;
+      }
+    }
+
+    &__gallery {
+      @media (max-width: v.$mobile) {
+        display: none;
+      }
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+
+    .line {
+      width: 25px;
+      height: 3px;
+      background-color: v.$dark-grey;
+    }
+  }
+
+  @media (max-width: v.$mobile) {
+    &__links {
+      display: none;
+    }
+
+    &__hamburger {
+      display: flex;
+    }
+  }
+}
