@@ -1,0 +1,66 @@
+@use "../styles/variables" as v;
+
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: v.$black;
+  color: #f0f0f0;
+
+  &__content {
+    flex: 1;
+    max-width: 50%;
+
+    &__title {
+      font-size: 4rem;
+      font-family: "Playfair Display", serif;
+      color: #caaa86;
+    }
+
+    &__subtitle {
+      font-family: "Nunito", sans-serif;
+      font-size: 1.5rem;
+      color: v.$grey;
+      margin: 1rem auto;
+    }
+
+    &__description {
+      font-family: "Nunito", sans-serif;
+      font-size: 1rem;
+      color: v.$grey;
+      margin: 1rem auto;
+      margin-top: 1rem;
+      line-height: 1.5;
+    }
+  }
+
+  &__image {
+    @media (max-width: v.$tablet) {
+      display: none;
+    }
+
+    flex: 1;
+    max-width: 50%;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width: v.$mobile) {
+    flex-direction: column;
+    text-align: center;
+
+    &__content {
+      max-width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    &__image {
+      max-width: 100%;
+    }
+  }
+}

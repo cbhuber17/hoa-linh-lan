@@ -1,4 +1,3 @@
-import React from "react";
 import "./MobileNav.scss";
 
 const MobileNav = ({ isOpen, onClose }) => {

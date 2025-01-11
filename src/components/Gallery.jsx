@@ -1,4 +1,3 @@
-import React from "react";
 import "./Gallery.scss";
 import Image from "./Image";
 
