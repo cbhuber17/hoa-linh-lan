@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import { flowerImages } from "../constants";
 import "./FlowerCarousel.scss";
-import Image from "./Image";
+import Image from "../components/Image";
 
 const FlowerCarousel = () => {
   const settings = {

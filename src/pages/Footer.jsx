@@ -1,3 +1,4 @@
+import { scrollToSection } from "../utils";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -13,16 +14,18 @@ const Footer = () => {
           <h3>Liên Kết Nhanh</h3>
           <ul>
             <li>
-              <a href="#hero">Trang chủ</a>
+              <a onClick={() => scrollToSection("hero")}>Trang chủ</a>
             </li>
             <li>
-              <a href="#best-flowers">Hoa đẹp nhất</a>
+              <a onClick={() => scrollToSection("best-flowers")}>
+                Hoa đẹp nhất
+              </a>
             </li>
             <li className="footer__links--all-flowers">
-              <a href="#gallery">Tất Cả Hoa</a>
+              <a onClick={() => scrollToSection("gallery")}>Tất Cả Hoa</a>
             </li>
             <li>
-              <a href="#contact">Liên hệ</a>
+              <a onClick={() => scrollToSection("contact")}>Liên hệ</a>
             </li>
           </ul>
         </div>

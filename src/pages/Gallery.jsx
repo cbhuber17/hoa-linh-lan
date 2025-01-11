@@ -1,5 +1,5 @@
 import "./Gallery.scss";
-import Image from "./Image";
+import Image from "../components/Image";
 
 const Gallery = () => {
   return (

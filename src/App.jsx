@@ -1,11 +1,11 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import Contact from "./components/Contact";
-import FlowerCarousel from "./components/FlowerCarousel";
-import Gallery from "./components/Gallery";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
+import FlowerCarousel from "./pages/FlowerCarousel";
+import Gallery from "./pages/Gallery";
+import Hero from "./pages/Hero";
+import Footer from "./pages/Footer";
 import Navbar from "./components/Navbar";
-import NotFound from "./components/NotFound";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (

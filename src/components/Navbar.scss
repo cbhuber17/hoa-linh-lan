@@ -24,6 +24,7 @@
     font-size: 1.5rem;
     color: v.$orange;
     margin-right: 2rem;
+    cursor: pointer;
 
     @media (max-width: v.$mobile) {
       display: none;
@@ -39,6 +40,7 @@
     list-style: none;
     display: flex;
     gap: 2rem;
+    cursor: pointer;
 
     li a {
       text-decoration: none;

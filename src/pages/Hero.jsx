@@ -1,4 +1,5 @@
-import Button from "./Button";
+import Button from "../components/Button";
+import { scrollToSection } from "../utils";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
         <p className="hero__content__subtitle">
           Cách cắm hoa tuyệt đẹp cho mọi dịp.
         </p>
-        <a href="#best-flowers">
+        <a onClick={() => scrollToSection("best-flowers")}>
           <Button message="Xem bó hoa" />
         </a>
       </div>

@@ -1,3 +1,4 @@
+import { scrollToSection } from "../utils";
 import "./MobileNav.scss";
 
 const MobileNav = ({ isOpen, onClose }) => {
@@ -8,13 +9,13 @@ const MobileNav = ({ isOpen, onClose }) => {
         <h1 className="mobile-nav__content__header">Điều Hướng Trang</h1>
         <ul>
           <li onClick={onClose}>
-            <a href="#best-flowers">Hoa đẹp nhất</a>
+            <a onClick={() => scrollToSection("best-flowers")}>Hoa đẹp nhất</a>
           </li>
           {/* <li onClick={onClose}>
-            <a href="#gallery">Phòng trưng bày</a>
+            <a onClick={() => scrollToSection("gallery")}>Phòng trưng bày</a>
           </li> */}
           <li onClick={onClose}>
-            <a href="#contact">Liên hệ</a>
+            <a onClick={() => scrollToSection("contact")}>Liên hệ</a>
           </li>
         </ul>
       </div>
